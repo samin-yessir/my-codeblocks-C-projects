@@ -12,7 +12,7 @@ int main(){
     }
     printf("Array values = [ ");
     for (i = 0; i < n; i++) {
-        printf(" %d ", val[i]);
+        printf(" %d , ", val[i]);
     }
     printf("] ");
 
