@@ -18,10 +18,9 @@ int main(){
 
     printf("New array = [");
     for (i = 0 ; i < 9 ; i++){
-        printf(" %d ", val[i]);
+        printf("%d%s", val[i], (i == 8) ? "" : ", ");
     }
     printf("]\n");
-
     return 0;
 }
 
