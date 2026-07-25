@@ -11,8 +11,13 @@ int main(){
     char direction;
     int moved = 0, move_counter = 0;
 
+    printf("================================\n");
+    printf("        THE UNKNOWN GRID        \n");
+    printf("================================\n\n");
+    printf("Find the hidden goal.\nAvoid the hidden danger.\n\n");
+
     while(1){
-        printf("Move Counter = %d\n", move_counter);
+        printf("\nMove Counter = %d\n", move_counter);
         for(i = 0 ; i < 3 ; i++){
             printf("+---+---+---+\n");
             for(j = 0 ; j < 3 ; j++){
@@ -82,11 +87,23 @@ int main(){
 
         if (moved == 1){
             if (board[P_row][P_column] == 5){
+                printf("\n====================\n");
                 printf("*** GAME OVER ;( ***\n");
+                printf(" /\\_/\\\n");
+                printf("( ;_; )\n");
+                printf(" /| |\\ \n");
+                printf("  / \\");
+                printf("\n");
                 break;
             }
             else if (board[P_row][P_column] == 10){
-                printf("\n*** |YOU WIN| ***\n");
+                printf("\n====================\n");
+                printf("*** |YOU WIN| ***\n");
+                printf(" /\\_/\\\n");
+                printf("( ^_^ )\n");
+                printf(" /| |\\ \n");
+                printf("  / \\");
+                printf("\n");
                 break;
             }
         }
