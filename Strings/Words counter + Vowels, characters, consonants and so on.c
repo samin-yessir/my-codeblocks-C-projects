@@ -41,5 +41,6 @@ int main(){
     printf("\nDigits: %d", digit);
     printf("\nWhite spaces: %d\n", space);
 
+
 return 0;
 }
